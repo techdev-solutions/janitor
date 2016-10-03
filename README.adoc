@@ -1,0 +1,3 @@
+# Janitor - Keeping your Pocket clean since 2016
+
+An application to perform cleanup work using the https://getpocket.com[Pocket API].
