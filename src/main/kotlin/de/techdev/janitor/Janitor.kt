@@ -1,7 +1,7 @@
 package de.techdev.janitor
 
-import java.io.PrintStream as Printer
+import de.techdev.pocket.api.Pocket
 
 fun main(args: Array<String>): Unit {
-
+    val pocket = Pocket.connect()
 }
