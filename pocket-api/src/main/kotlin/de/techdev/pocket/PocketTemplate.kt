@@ -19,7 +19,7 @@ internal class PocketTemplate : Pocket {
     }
 
     private fun client(): OkHttpClient {
-        return OkHttpClient()
+        return OkHttpClient.Builder().addInterceptor(PocketInterceptor).build()
     }
 
     override fun retrieveOperations() = retrieveOperations
