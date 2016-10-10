@@ -1,3 +1,6 @@
 # Janitor - Keeping your Pocket clean since 2016
 
 An application to perform cleanup work using the https://getpocket.com[Pocket API].
+
+## API Documentation
+The documentation for the Kotlin API bindings can be found https://techdev-solutions.github.io/janitor/pocket-api/[here].
