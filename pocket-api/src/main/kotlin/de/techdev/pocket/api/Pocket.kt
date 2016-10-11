@@ -10,7 +10,11 @@ import de.techdev.pocket.PocketTemplate
 interface Pocket {
 
     companion object {
-        fun connect(): Pocket = PocketTemplate()
+        /**
+         * @param consumer the consumer key to connect to the Pocket API
+         * @param access the access token to connect to the Pocket API
+         */
+        fun connect(consumer: String, access: String): Pocket = PocketTemplate(consumer, access)
     }
 
     /**
