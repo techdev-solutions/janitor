@@ -1,4 +1,5 @@
-# Janitor - Keeping your Pocket clean since 2016 image:https://travis-ci.org/techdev-solutions/janitor.svg?branch=master["Build Status",link="https://travis-ci.org/techdev-solutions/janitor"]
+# Janitor - Keeping your Pocket clean since 2016
+image:https://travis-ci.org/techdev-solutions/janitor.svg?branch=master["Build Status",link="https://travis-ci.org/techdev-solutions/janitor"]
 
 An application to perform cleanup work using the https://getpocket.com[Pocket API].
 
