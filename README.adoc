@@ -4,3 +4,6 @@ An application to perform cleanup work using the https://getpocket.com[Pocket AP
 
 ## API Documentation
 The documentation for the Kotlin API bindings can be found https://techdev-solutions.github.io/janitor/pocket-api/[here].
+
+## Tutorial (German)
+- https://jaxenter.de/kotlin-tutorial-48156[Kotlin: Ein Tutorial für Einsteiger @ JAXenter]
