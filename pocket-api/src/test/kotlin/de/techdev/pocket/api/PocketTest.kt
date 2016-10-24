@@ -13,6 +13,7 @@ import org.mockito.Mockito.mock
 import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith
 import kotlin.test.assertFalse
+import kotlin.test.assertNull
 
 class PocketTest {
 
@@ -43,6 +44,16 @@ class PocketTest {
         assertEquals("A Test Title", items.first().title)
     }
 
+    @Test
+    fun `given an item without title, no exception is thrown`() {
+        server.enqueue(itemWithoutTitle())
+
+        val items = pocket().retrieveOperations().items()
+
+        assertFalse(items.isEmpty())
+        assertNull(items.first().title)
+    }
+
     private fun pocket(): Pocket {
         val pocket = mock(Pocket::class.java)
         val transport = Components.transport("consumer", "access")
@@ -64,13 +75,34 @@ class PocketTest {
         response.setResponseCode(200)
         response.setHeader("Content-Type", "application/json")
         response.setBody(
-                """
+            """
                 {
                     "status" : 1,
                     "list" : {
                         "229279689" : {
                             "item_id" : "229279689",
                             "resolved_title" : "A Test Title",
+                            "time_added" : "1471869712"
+                        }
+                    }
+                }
+            """
+        )
+
+        return response
+    }
+
+    private fun itemWithoutTitle(): MockResponse {
+        val response = MockResponse()
+        response.setResponseCode(200)
+        response.setHeader("Content-Type", "application/json")
+        response.setBody(
+            """
+                {
+                    "status" : 1,
+                    "list" : {
+                        "229279689" : {
+                            "item_id" : "229279689",
                             "time_added" : "1471869712"
                         }
                     }
