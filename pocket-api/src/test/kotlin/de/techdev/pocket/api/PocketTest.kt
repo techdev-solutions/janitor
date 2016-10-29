@@ -82,7 +82,8 @@ class PocketTest {
                         "229279689" : {
                             "item_id" : "229279689",
                             "resolved_title" : "A Test Title",
-                            "time_added" : "1471869712"
+                            "time_added" : "1471869712",
+                            "given_url" : "https://techdev.de"
                         }
                     }
                 }
@@ -103,7 +104,8 @@ class PocketTest {
                     "list" : {
                         "229279689" : {
                             "item_id" : "229279689",
-                            "time_added" : "1471869712"
+                            "time_added" : "1471869712",
+                            "given_url" : "https://techdev.de"
                         }
                     }
                 }
