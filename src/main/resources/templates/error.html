@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Error</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.min.css"/>
+        <style>
+            .logo {
+                font-weight: 900;
+                font-size: 18px;
+            }
+            .gray {
+                color: #333;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <section class="hero is-danger">
+            <div class="header-head">
+                <header class="nav">
+                    <div class="container">
+                        <div class="nav-left">
+                            <a class="nav-item logo">janitor</a>
+                        </div>
+                        <div class="nav-center">
+                            <a class="nav-item" href="https://github.com/techdev-solutions/janitor">
+                                <span class="icon">
+                                    <i class="fa fa-github"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title">
+                        Error
+                    </h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <p><strong th:text="${cause.message}"></strong></p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <p>
+                        <strong>janitor</strong> by <a href="https://techdev.de">techdev Solutions GmbH</a> is built with <a href="https://kotlinlang.org/">Kotlin</a>, <a href="https://spring.io/">Spring</a> and <a href="http://bulma.io/">Bulma</a>.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

@@ -3,16 +3,19 @@ version '0.0.1'
 
 buildscript {
     ext.kotlin_version = '1.0.4'
+    ext.spring_boot_version = '1.4.1.RELEASE'
 
     repositories {
         jcenter()
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:$spring_boot_version"
     }
 }
 
 apply plugin: 'kotlin'
+apply plugin: 'spring-boot'
 
 repositories {
     jcenter()
@@ -20,6 +23,7 @@ repositories {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile "org.springframework.boot:spring-boot-starter-thymeleaf"
     compile(project(":pocket-api"))
 }
 
