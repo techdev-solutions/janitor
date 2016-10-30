@@ -1,6 +1,7 @@
 # Janitor image:https://travis-ci.org/techdev-solutions/janitor.svg?branch=master["Build Status",link="https://travis-ci.org/techdev-solutions/janitor"]
 
 An application to perform cleanup work using the https://getpocket.com[Pocket API].
+Review your existing items via the web interface and have Janitor archive old items once per day.
 
 ## API Documentation
 The documentation for the Kotlin API bindings can be found https://techdev-solutions.github.io/janitor/pocket-api/[here].
