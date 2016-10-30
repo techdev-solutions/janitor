@@ -53,13 +53,16 @@
                     <thead>
                         <tr>
                             <th>Title</th>
+                            <th>Age</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr th:each="item : ${items}">
                             <td>
-                                <a href="#" th:href="${item.url}" th:text="${item.title}"></a>
+                                <a href="#" th:href="${item.url}" th:text="${item.label()}"></a>
                             </td>
+                            <td th:unless="${item.age() == 1}"><span th:text="${item.age()}"></span> days</td>
+                            <td th:if="${item.age() == 1}"><span th:text="${item.age()}"></span> day</td>
                         </tr>
                     </tbody>
                 </table>
