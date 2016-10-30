@@ -11,7 +11,7 @@ class SweepTask @Autowired constructor(
         private val pocket: Pocket,
         @Value("\${pocket.item.maxage}") private val maxage: Long) {
 
-    @Scheduled(cron = "*/20 * * * * *")
+    @Scheduled(cron = "30 2 * * * *")
     fun sweep() {
         val items = pocket.retrieveOperations().items().filter { it.age() > maxage }
 
