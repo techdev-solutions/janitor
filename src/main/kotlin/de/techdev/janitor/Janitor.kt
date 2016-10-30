@@ -1,19 +1,21 @@
 package de.techdev.janitor
 
 import de.techdev.pocket.api.Pocket
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.context.annotation.Bean
-
-val access   = "56de666b-76eb-0dd4-94cb-5d839f"
-val consumer = "40519-58cacc95cba03ad3d23b2ba6"
+import org.springframework.scheduling.annotation.EnableScheduling
 
 fun main(args: Array<String>): Unit {
     SpringApplication.run(Janitor::class.java, *args)
 }
 
+@EnableScheduling
 @SpringBootApplication
-open class Janitor {
+open class Janitor(
+        @Value("\${pocket.consumer}") private val consumer: String,
+        @Value("\${pocket.access}") private val access: String) {
 
     @Bean
     open fun pocket(): Pocket {
