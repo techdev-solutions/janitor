@@ -1,7 +1,7 @@
 package de.techdev.pocket.api
 
 /**
- * Determines how many information per Item will be transferred
+ * Determines how many information per [Item] will be transferred
  *
  * @author Alexander Hanschke
  */

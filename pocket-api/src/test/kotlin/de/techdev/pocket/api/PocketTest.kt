@@ -54,6 +54,15 @@ class PocketTest {
         assertNull(items.first().title)
     }
 
+    @Test
+    fun `given an item without title, url is used as label`() {
+        server.enqueue(itemWithoutTitle())
+
+        val items = pocket().retrieveOperations().items()
+
+        assertEquals("https://techdev.de", items.first().label())
+    }
+
     private fun pocket(): Pocket {
         val pocket = mock(Pocket::class.java)
         val transport = Components.transport("consumer", "access")
