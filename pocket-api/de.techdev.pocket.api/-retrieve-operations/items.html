@@ -9,18 +9,16 @@
 <h1>items</h1>
 <a name="de.techdev.pocket.api.RetrieveOperations$items(de.techdev.pocket.api.State, de.techdev.pocket.api.Sort, de.techdev.pocket.api.Details)"></a>
 <code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">items</span><span class="symbol">(</span><span class="identifier" id="de.techdev.pocket.api.RetrieveOperations$items(de.techdev.pocket.api.State, de.techdev.pocket.api.Sort, de.techdev.pocket.api.Details)/state">state</span><span class="symbol">:</span>&nbsp;<a href="../-state/index.html"><span class="identifier">State</span></a>&nbsp;<span class="symbol">=</span>&nbsp;State.UNREAD<span class="symbol">, </span><span class="identifier" id="de.techdev.pocket.api.RetrieveOperations$items(de.techdev.pocket.api.State, de.techdev.pocket.api.Sort, de.techdev.pocket.api.Details)/sort">sort</span><span class="symbol">:</span>&nbsp;<a href="../-sort/index.html"><span class="identifier">Sort</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Sort.OLDEST<span class="symbol">, </span><span class="identifier" id="de.techdev.pocket.api.RetrieveOperations$items(de.techdev.pocket.api.State, de.techdev.pocket.api.Sort, de.techdev.pocket.api.Details)/details">details</span><span class="symbol">:</span>&nbsp;<a href="../-details/index.html"><span class="identifier">Details</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Details.SIMPLE<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Collection</span><span class="symbol">&lt;</span><a href="../-item/index.html"><span class="identifier">Item</span></a><span class="symbol">&gt;</span></code>
-<p>Retrieve existing <a href="../-item/index.html">Item</a>s from the Pocket API based on the given criteria</p>
+<p>Retrieves existing <a href="../-item/index.html">Item</a>s from Pocket</p>
 <h3>Parameters</h3>
 
 <p><a name="state"></a>
-<code>state</code> - the state the items have to be in (default: <a href="../-state/-u-n-r-e-a-d.html">State.UNREAD</a>)
+<code>state</code> - only retrieve <a href="../-item/index.html">Item</a>s with this <a href="../-state/index.html">State</a>
 <p><a name="sort"></a>
-<code>sort</code> - the sorting in which to return the items (default: <a href="../-sort/-o-l-d-e-s-t.html">Sort.OLDEST</a>)
+<code>sort</code> - sort <a href="../-item/index.html">Item</a>s based on the sort direction
 <p><a name="details"></a>
-<code>details</code> - the level of detail for each item (default: <a href="../-details/-s-i-m-p-l-e.html">Details.SIMPLE</a>)
-<h3>Exceptions</h3>
-
-<p><a name="PocketException"></a>
-<code>PocketException</code> - 
+<code>details</code> - specify whether all <a href="../-item/index.html">Item</a> details shall be returned or only a minimum
+<p><strong>Return</strong><br/>
+all existing <a href="../-item/index.html">Item</a>s matching the specified parameters</p>
 </BODY>
 </HTML>
