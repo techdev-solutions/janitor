@@ -1,13 +1,12 @@
 package de.techdev.janitor
 
 import de.techdev.pocket.api.Pocket
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.scheduling.annotation.Scheduled
 import org.springframework.stereotype.Component
 
 @Component
-class SweepTask @Autowired constructor(
+class SweepTask(
         private val pocket: Pocket,
         @Value("\${pocket.item.maxage}") private val maxage: Long) {
 

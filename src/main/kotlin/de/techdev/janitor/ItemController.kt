@@ -2,14 +2,13 @@ package de.techdev.janitor
 
 import de.techdev.pocket.api.Pocket
 import de.techdev.pocket.api.Sort
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.ExceptionHandler
 import org.springframework.web.bind.annotation.GetMapping
 
 @Controller
-class ItemController @Autowired constructor(private val pocket: Pocket) {
+class ItemController(private val pocket: Pocket) {
 
     @GetMapping("/")
     fun home() = "redirect:/items"
