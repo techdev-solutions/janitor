@@ -10,6 +10,7 @@ The documentation for the Kotlin API bindings can be found https://techdev-solut
 Kotlin: Ein Tutorial für Einsteiger @ JAXenter::
 * https://jaxenter.de/kotlin-tutorial-48156[Part 1]
 * https://jaxenter.de/kotlin-ein-tutorial-fuer-einsteiger-teil-2-48587[Part 2]
+* https://jaxenter.de/kotlin-ein-tutorial-fuer-einsteiger-teil-3-48967[Part 3]
 
 ## Screenshots
 ### Item Overview
