@@ -11,6 +11,7 @@ Kotlin: Ein Tutorial für Einsteiger @ JAXenter::
 * https://jaxenter.de/kotlin-tutorial-48156[Part 1]
 * https://jaxenter.de/kotlin-ein-tutorial-fuer-einsteiger-teil-2-48587[Part 2]
 * https://jaxenter.de/kotlin-ein-tutorial-fuer-einsteiger-teil-3-48967[Part 3]
+* https://jaxenter.de/kotlin-ein-tutorial-fuer-einsteiger-teil-4-49160[Part 4]
 
 ## Screenshots
 ### Item Overview
