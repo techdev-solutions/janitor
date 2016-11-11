@@ -2,12 +2,15 @@ group 'de.techdev'
 version '0.0.1'
 
 buildscript {
-    ext.kotlin_version = '1.0.4'
-    ext.dokka_version = '0.9.9'
+    ext {
+        kotlin_version = '1.0.5'
+        dokka_version = '0.9.9'
+    }
 
     repositories {
         jcenter()
     }
+
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "org.jetbrains.dokka:dokka-gradle-plugin:${dokka_version}"
@@ -23,12 +26,12 @@ repositories {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile "com.squareup.okhttp3:okhttp:3.4.1"
-    compile "com.fasterxml.jackson.module:jackson-module-kotlin:2.8.3"
+    compile "com.squareup.okhttp3:okhttp:3.4.2"
+    compile "com.fasterxml.jackson.module:jackson-module-kotlin:2.8.4"
 
     testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
-    testCompile "com.squareup.okhttp3:mockwebserver:3.4.1"
-    testCompile "org.mockito:mockito-core:2.2.0"
+    testCompile "com.squareup.okhttp3:mockwebserver:3.4.2"
+    testCompile "org.mockito:mockito-core:2.2.15"
 
 }
 
